@@ -1,23 +1,5 @@
 # Building a Certification-Style AI Exam Generation System
 
-Actually, if your goal is to create high-quality certification-style exams like the sample file, I would not recommend the simple approach:
-
-```text
-PDFs
- → AI
- → Generate Questions
-```
-
-because you'll usually get mediocre questions:
-
-- Too close to source text
-- Memorization-based
-- Weak distractors
-- Repeated patterns
-- Inconsistent difficulty
-
-The uploaded exam is much more sophisticated.
-
 ## Recommended Architecture
 
 Think of the process as a pipeline:
@@ -44,9 +26,7 @@ Exam Bank
 
 # Step 1: Build a Concept Catalog (Most Important)
 
-Most people skip this.
-
-Instead of loading PDFs directly into AI and asking for questions, first convert source materials into structured concepts.
+first convert source materials into structured concepts.
 
 Example:
 
